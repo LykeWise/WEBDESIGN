@@ -51,7 +51,7 @@ body {
 }
 .overlay a {font-size: 20px}
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 600px) {
+
  
   .overlay .closebtn {
     font-size: 40px;
@@ -59,16 +59,43 @@ body {
     right: 35px;
   }
   
+
+#sidemenue{
+    width: 10%;
 }
 
 #sidemenue img:hover{
     opacity: 0.5;
     transition: 0.3s;
+    
 }
 .logo{
-    width:70%;
+    width:60%;
+    height: 55px;
     float:left;
 }
+.logo h1{
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+/* sign in|register button */
+.signin{
+    width: 30%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 40px;
+    float: left;
+}
+.signin a{
+ font-size: 10px;
+ letter-spacing: 2px;
+ margin-bottom: 0px;
+ margin-left: 0px;
+ float: left;
+ color: #333333;
+}
+/* slide menue button */
 .sbutton{
     position: relative;
     width:30%;
@@ -79,13 +106,14 @@ body {
 .sbutton img{
     width: 30px;
 }
-
+/* grey tab below header */
 .tab{
     background-color: #333333;
     width:100%;
     float:left;
     height:35px;
 }
+/* cart icon */
 .cart img{
    
     height:25px;
@@ -97,6 +125,7 @@ margin-right: 5px;
     opacity: 0.4;
     transition: 0.2s;
 }
+/* main body with t-shirt categories */
 .container{
     position: relative;
     width:100%;
@@ -126,6 +155,7 @@ margin-right: 5px;
     opacity: 0.5;
     transition: 0.2s;
 }
+/* bottom tab with contacts */
 .bottom{
     position: relative;
     width: 100%;
@@ -137,22 +167,32 @@ margin-right: 5px;
     width: 100%;
     float: left;
 }
-.bottom img{
+.bottom #phone img,#mail img{
     height: 15px;
     float: left;
-    margin-left: 20px;;
+    margin-left: 20px;
 }
-.bottom h5{
+.bottom #phone h5,#mail h5{
     float: left;
     width: 100%;
     margin-bottom: 15px;
     margin-left: 10px;
    }
-.bottom h6{
+.bottom #phone h6,#mail h6{
     width: 20%;
     float: left;
     margin-top: 0px;
     margin-bottom: 8px;
     margin-left: 15px;
 }
+
+ #insta img,h6{
+     float: right;
+     margin-top: 0px;
+     margin-right:10px;
+ }
+ #insta img{
+    height: 15px;
+    margin-left: 20px;
+ }
  
