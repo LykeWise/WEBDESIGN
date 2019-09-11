@@ -1,5 +1,6 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Tangerine', serif; */
      overflow-x: hidden; 
   }
 
@@ -70,25 +71,28 @@ body {
     
 }
 .logo{
-    width:60%;
+    width:65%;
     height: 55px;
     float:left;
+    margin-bottom: 5px;
 }
 .logo h1{
     font-size: 30px;
     letter-spacing: 10px;
     text-align: center;
+    margin: 0px;
+   
 }
 /* sign in|register button */
 .signin{
-    width: 30%;
+    width: 25%;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 40px;
     float: left;
 }
 .signin a{
- font-size: 10px;
+ font-size: 8px;
  letter-spacing: 2px;
  margin-bottom: 0px;
  margin-left: 0px;
@@ -124,6 +128,7 @@ margin-right: 5px;
 #car img:hover{
     opacity: 0.4;
     transition: 0.2s;
+    background-color: #333333;
 }
 /* main body with t-shirt categories */
 .container{
@@ -172,6 +177,7 @@ margin-right: 5px;
     float: left;
     margin-left: 20px;
 }
+
 .bottom #phone h5,#mail h5{
     float: left;
     width: 100%;
@@ -196,3 +202,22 @@ margin-right: 5px;
     margin-left: 20px;
  }
  
+ /* SOLID PAGE */
+ #slider{
+     overflow: hidden;
+     float: left;
+ }
+
+ #slider figure{
+     position: relative;
+     width: 300%;
+     margin: 0px;
+     left:0;
+     animation: 3s slider infinite;
+ } 
+ /* #slider figure img{
+     width: 30.3%;
+     float: left;
+     margin: 1.5%;
+
+ } */
