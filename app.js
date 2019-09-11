@@ -8,3 +8,4 @@ function openNav() {
     document.getElementById("myNav").style.width = "0%";
     document.getElementById("sidemenue").style.opacity= "1.0";
   }
+
