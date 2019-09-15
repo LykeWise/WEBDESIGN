@@ -167,6 +167,53 @@ margin-right: 5px;
     transition: 0.2s;
 }
 
+
+
+ 
+/* SOLID PAGE */
+
+ .images{
+     position: relative;
+     float: left;
+     background-image: url("background.jpg"); 
+     background-size: 100%;   
+ }
+ .mySlides {
+     
+     display:none;
+     align-content: center;
+     margin: auto;
+ }
+
+
+.images #bt1{
+    position: absolute;
+  top: 50%;
+  background-color: #161616;
+  color: antiquewhite;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 0.3;
+   }
+
+   .images #bt2{
+    position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: #161616;
+  color: antiquewhite;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 0.3;
+
+   }
+   
 .tabs{
     width: 100%;
     background-color: #161616;
@@ -181,6 +228,18 @@ margin-right: 5px;
     color: antiquewhite;
     height: 40px;
 }
+
+   #bt1:hover{
+       opacity: 1.0;
+       transition: 0.5s;
+   }
+   #bt2:hover{
+       opacity: 1.0;
+       transition: 0.5s;
+   }
+
+
+
 /* bottom tab with contacts */
 .bottom{
     position: relative;
@@ -188,6 +247,7 @@ margin-right: 5px;
     float: left;
     background-color: #333333;
     color: antiquewhite;
+    max-width: 600px;
 }
 .bottom .text{
     width: 100%;
@@ -222,117 +282,3 @@ margin-right: 5px;
     height: 15px;
     margin-left: 20px;
  }
- 
- /* SOLID PAGE */
- /* #slider{
-     overflow: hidden;
-     float: left;
- }
-
- #slider figure{
-     position: relative;
-     width: 100%;
-     margin: 0px;
-     left:0;
-     animation: 10s slide infinite;
- } 
- #slider figure img{
-     width: 30.3%;
-     float: left;
-     margin: 1.5%;
-
- } */
-
- .images{
-     position: relative;
-     float: left;
-     
- }
- .mySlides {
-     
-     display:none;
-     align-content: center;
- }
-
-
-/* #bt1{
-    float: left;
-    width: 50%;
-}
-#bt2{
-    float: right;
-    width: 50%;
-} */
-.images #bt1{
-    position: absolute;
-  top: 50%;
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
-  background-color: #161616;
-  color: antiquewhite;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  opacity: 0.3;
-   }
-
-   .images #bt2{
-    position: absolute;
-  top: 50%;
-  right: 0;
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
-  background-color: #161616;
-  color: antiquewhite;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  opacity: 0.3;
-
-   }
-
-   #bt1:hover{
-       opacity: 1.0;
-       transition: 0.5s;
-   }
-   #bt2:hover{
-       opacity: 1.0;
-       transition: 0.5s;
-   }
-
-.links{
-    width: 33.33%;
-    float: left;
-    background-color: #333333;
-    text-align: center;
-    height: 40px;
-}
-.links h4{
-    margin-top: 12px;
-
-}
-
- .links h4 a{
-     text-decoration: none;
-     color: antiquewhite;
-     text-align: center;
-    
- }
-#horiz2:hover{
-    background-color: #161616;
-}
- 
-#horiz1:hover{
-    background-color: #161616;
-}
-#horiz3:hover{
-    background-color: #161616;
-}
-
-
