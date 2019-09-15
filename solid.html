@@ -54,14 +54,37 @@
             <a href="#"><img src="polos-t-shirt-461211.jpg" alt=""></a><a href="#"><div class="centered"><img src="POLO’S.png" alt=" "></div></a>
       
         </div>-->
-  <div id="slider">
+  <!-- <div id="slider">
       <figure>
-          <img src="solid T-SHIRT.jpg" alt=" ">
-          <img src="solid black.jpg" alt=" ">
-          <img src="sassy.jpg" alt=" ">
+        <img src="solid black.jpg" alt=" ">  
+        <img src="solid T-SHIRT.jpg" alt=" "> 
+        <img src="sassy.jpg" alt=" ">
       </figure>
+  </div> -->
+  <div class="images" style="max-width:500px">
+    <img class="mySlides" src="solid black.jpg" style="width:100%">
+    <img class="mySlides" src="solid T-SHIRT.jpg" style="width:100%">
+    <img class="mySlides" src="sassy.jpg" style="width:100%">
+
+    <button id="bt1" class="but" onclick="plusDivs(-1)">&#10094;</button>
+  <button id="bt2" class="but" onclick="plusDivs(1)">&#10095;</button>
   </div>
-       
+
+  
+  
+ <div id="horiz1" class="links">
+    <h4><a href="#">ALL</a></h4>
+
+ </div>
+ <div id="horiz2" class="links">
+    <h4><a href="solid.html">HALF-SLEEVE</a></h4>
+
+ </div>
+ <div id="horiz3" class="links">
+    <h4><a href="#">FULL-SLEEVE</a></h4>
+
+ </div>
+  
   <div class="bottom">
      <h5>CONTACT</h5>
       <div id= "phone"class="text"><img src="phone.png"><h6>+91 9994835321</h6></div>
@@ -69,5 +92,44 @@
       <div id="insta" class="text"><h6>lyke_wise</h6><img src="insta.png"></div>
   </div> 
     
+  <div class="container">
+    <img src="">
+
+  </div>
+
+  <script>
+   var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3500); // Change image every 2 seconds
+  }
+
+  var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+  </script>
 </body>
 </html>
