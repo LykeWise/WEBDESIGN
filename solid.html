@@ -69,19 +69,12 @@
     <button id="bt1" class="but" onclick="plusDivs(-1)">&#10094;</button>
   <button id="bt2" class="but" onclick="plusDivs(1)">&#10095;</button>
   </div>
-
-  
-  
- <div id="horiz1" class="links">
-    <h4><a href="#">ALL</a></h4>
-
- </div>
- <div id="horiz2" class="links">
-    <h4><a href="solid.html">HALF-SLEEVE</a></h4>
-
- </div>
- <div id="horiz3" class="links">
-    <h4><a href="#">FULL-SLEEVE</a></h4>
+<div class="tabs">
+  <button id="all" class="category">ALL</button>
+  <button id="hsleeve" class="category">HALF-SLEEVE</button> 
+  <button id="fsleeve" class="category">FULL-SLEEVE</button>
+ </div> 
+ 
 
  </div>
   
@@ -92,10 +85,7 @@
       <div id="insta" class="text"><h6>lyke_wise</h6><img src="insta.png"></div>
   </div> 
     
-  <div class="container">
-    <img src="">
 
-  </div>
 
   <script>
    var myIndex = 0;
@@ -109,7 +99,9 @@
     }
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
+    x[myIndex-1].style.display = "block";
+    x[myIndex-1].style.margin = "auto";  
+    x[myIndex-1].style.width = "50%"; 
     setTimeout(carousel, 3500); // Change image every 2 seconds
   }
 
@@ -128,7 +120,9 @@ function showDivs(n) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndex-1].style.display = "block";
+  x[myIndex-1].style.margin="auto";
+  x[myIndex-1].style.width = "50%"; 
 }
   </script>
 </body>
