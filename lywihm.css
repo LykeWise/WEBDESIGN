@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Tangerine', serif; */
      overflow-x: hidden; 
+     max-width: 600px;
   }
 
 /* The Overlay (background) */
@@ -165,6 +166,21 @@ margin-right: 5px;
     opacity: 0.5;
     transition: 0.2s;
 }
+
+.tabs{
+    width: 100%;
+    background-color: #161616;
+    
+}
+.category{
+    width: 33.3%;
+    margin: 0;
+    float: left;
+    background-color: #333333;
+    border: 0;
+    color: antiquewhite;
+    height: 40px;
+}
 /* bottom tab with contacts */
 .bottom{
     position: relative;
@@ -208,7 +224,7 @@ margin-right: 5px;
  }
  
  /* SOLID PAGE */
- #slider{
+ /* #slider{
      overflow: hidden;
      float: left;
  }
@@ -225,15 +241,17 @@ margin-right: 5px;
      float: left;
      margin: 1.5%;
 
- }
+ } */
 
  .images{
      position: relative;
-     width: 100%;
      float: left;
+     
  }
  .mySlides {
+     
      display:none;
+     align-content: center;
  }
 
 
