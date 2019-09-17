@@ -60,6 +60,16 @@ function showDivs(n) {
     document.getElementById(idName).style.display = "block";
   }
 
+  function mouseover()
+{
+  document.getElementById("img1").style.display = "none";
+  document.getElementById("img2").style.display = "block";
+    
+}
+function mouseout()
+{
+  document.getElementById("img1").style.display = "block";
+  document.getElementById("img2").style.display = "none";
   
-
+}
 
