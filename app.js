@@ -50,30 +50,16 @@ function showDivs(n) {
   x[myIndex-1].style.width = "50%"; 
 }
 
-  function openCity(cityName) {
+  function openCategory(idName) {
     var i, x, tablinks;
     x = document.getElementsByClassName("solidt");
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
     
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(idName).style.display = "block";
   }
-
-  var myIdx = 0;
 
   
-  function carousel1() {
-    var i;
-    var x = document.getElementsByClassName("display");
-    var y = document.getElementsByTagName("li");
-    var z = document.getElementsByTagName("img");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";
-    x[myIndex-1].style.width = "50%"; 
-    setTimeout(carousel, 3500); // Change image every 2 seconds
-  }
+
+
