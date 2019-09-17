@@ -1,5 +1,8 @@
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.opacity="1.0";
+    document.getElementById("cont").style.transition="0.2s";
+    
     
 }
   
@@ -7,6 +10,9 @@ function openNav() {
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
     document.getElementById("sidemenue").style.opacity= "1.0";
+    document.getElementById("myNav").style.opacity="0.0";
+    document.getElementById("cont").style.transition="0.2s";
+    
   }
 
   var myIndex = 0;
@@ -52,4 +58,22 @@ function showDivs(n) {
     }
     
     document.getElementById(cityName).style.display = "block";
+  }
+
+  var myIdx = 0;
+
+  
+  function carousel1() {
+    var i;
+    var x = document.getElementsByClassName("display");
+    var y = document.getElementsByTagName("li");
+    var z = document.getElementsByTagName("img");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";
+    x[myIndex-1].style.width = "50%"; 
+    setTimeout(carousel, 3500); // Change image every 2 seconds
   }
