@@ -7,64 +7,78 @@
             <title>LykeWise Designs|HOME</title>
         </head>
         <body>
-                    
-                    <link rel="stylesheet" href="lywihm.css">
+                    <link rel="stylesheet" href="plugins/aos.css">
+                    <link rel="stylesheet" href="LINKS/lywihm.css">
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
                     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
                     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
-                    <script src="app.js"></script>
-                <header id="head">
-                        <!-- The overlay -->
-                        <div id="myNav" class="overlay">
-
-                                <!-- Button to close the overlay navigation -->
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                
-                                <!-- Overlay content -->
-                                <div class="overlay-content">
-                                        <a href="#">BULK ORDERS</a>
-                                        <a href="#">REQUEST FOR DESIGN</a>
-                                        <a href="#">SUBMIT DESIGNS</a>
-                                        <a href="#">LOGIN</a>
-                                        <a href="#">CONTACT US</a>
-                                </div>
-                        
-                        </div>
-                        
-                        <!-- Use any element to open/show the overlay navigation menu -->
-                        <span style="cursor:pointer" id="sidemenue" onclick="openNav()"class="sbutton">
-                                <img src="smenue.png"alt="">
-                        </span>
-                        <div class="logo"><h1>
+                    <script src="LINKS/app.js"></script>
+                <div class="whole">
+                                <header id="head">
+                                                <!-- The overlay -->
+                        <div title="logo" class="logo"><h1>
                                 <a href="logopage.html">LYKE WISE</a></h1>
                         </div>
-                        <div class="signin" style="font-size: 10px" >
-                                <a href="#">SIGN IN |</a><a href="#">REGISTER</a>
-                        </div>
+                        <div class="menuTab" style="height: 30px;float: left;width: 100%;">
+                                <div id="myNav" class="overlay">
 
-                        <div class="tab">
-                                <div id="car" class="cart">
-                                        <a href="#"><img src="cart.png" alt=""></a>
+                                        <!-- Button to close the overlay navigation -->
+                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                        
+                                        <!-- Overlay content -->
+                                        <div id="cont" class="overlay-content">
+                                                <a href="#">BULK ORDERS</a>
+                                                <a href="#">REQUEST FOR DESIGN</a>
+                                                <a href="#">SUBMIT DESIGNS</a>
+                                                <a href="signin-form.html">LOGIN</a>
+                                                <a href="#">CONTACT US</a>
+                                        </div>
+                                
+                                </div>
+                                
+                                <!-- Use any element to open/show the overlay navigation menu -->
+                                <span title="menue" style="cursor:pointer" id="sidemenue" onclick="openNav()"class="sbutton">
+                                        <img src="IMAGES/smenue.png"alt="">
+                                </span>
+                                
+                                <div class="signin" style="font-size: 10px" >
+                                        <a title="click to register" href="register.html">REGISTER</a><a title="click to sign-in" href="signin-form.html">SIGN IN |</a>
                                 </div>
                         </div>
-                </header>
-                
-                <div id="solid" class="container">
-                    <a href="solid.html"><img src="assassin-creed-dp-9.jpg" alt=""></a><a href="solid.html"><div class="centered"><img src="SOLID.png" alt=" "></div></a>
+                                                <div class="tab">
+                                                        <div id="car" class="cart">
+                                                                <a href="#"><img title="cart" src="IMAGES/cart.png" alt=""></a>
+                                                        </div>
+                                                </div>
+                                        </header>
+                                        <button id="topbt" onclick="topFunction()" data-aos="fade-left"><img src="IMAGES/arrow-up-01-512.png"></button>
 
+                                        <div id="solid" class="container" data-aos="fade-up" >
+                                            <a href="solid.html"><img src="IMAGES/assassin-creed-dp-9.jpg" alt=""></a><a href="solid.html"><div class="centered"><img src="IMAGES/SOLID.png" alt=" "></div></a>
+                        
+                                        </div>
+                                        <div id="graphic" class="container" data-aos="fade-up">
+                                                <a href="graphic.html"><img src="IMAGES/back-back-view-dark-1311590.jpg" alt=""></a><a href="graphic.html"><div class="centered"><img src="IMAGES/graphic.png" alt=" "></div></a>
+                                        </div>
+                                        <div id="polos" class="container" data-aos="fade-up">
+                                                <a href="polos.html"><img src="IMAGES/polos-t-shirt-461211.jpg" alt=""></a><a href="polos.html"><div class="centered"><img src="IMAGES/POLO’S.png" alt=" "></div></a>
+                                        </div>
+                                        <div class="bottom">
+                                                <h5>CONTACT</h5>
+                                                <div id= "phone"class="text"><img src="IMAGES/phone.png"><h6>+91 9994835321</h6></div>
+                                                <div id="mail" class="text"><img src="IMAGES/mail.png"><h6>lykewisedesigns@gmail.com</h6></div>
+                                                <div id="insta" class="text"><h6>lyke_wise</h6><img src="IMAGES/insta.png"></div>
+                                        </div>
+                                        <script src="plugins/aos.js"></script>
+                                        <script type="text/javascript">
+                                        AOS.init({
+                                            duration : 1200,
+                                        });
+                                        </script>
+                                        <script>
+                                                        window.onscroll = function() {scrollFunction()};
+                                                                     
+                                        </script> 
                 </div>
-                <div id="graphic" class="container">
-                        <a href="#"><img src="back-back-view-dark-1311590.jpg" alt=""></a><a href="#"><div class="centered"><img src="graphic.png" alt=" "></div></a>
-                </div>
-                <div id="polos" class="container">
-                        <a href="#"><img src="polos-t-shirt-461211.jpg" alt=""></a><a href="#"><div class="centered"><img src="POLO’S.png" alt=" "></div></a>
-                </div>
-                <div class="bottom">
-                        <h5>CONTACT</h5>
-                        <div id= "phone"class="text"><img src="phone.png"><h6>+91 9994835321</h6></div>
-                        <div id="mail" class="text"><img src="mail.png"><h6>lykewisedesigns@gmail.com</h6></div>
-                        <div id="insta" class="text"><h6>lyke_wise</h6><img src="insta.png"></div>
-                </div>
-            
         </body>
 </html>
